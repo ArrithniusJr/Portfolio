@@ -52,7 +52,7 @@ section.section2 > .cent-container > .personal > .social-m > .links {
 }
 .section1 > div > .social-m > .links > a > img,
 section.section2 > .cent-container > .personal > .social-m > .links > a > img {
-  height: 20px;
+  height: 18px;
   filter: invert();
 }
 .section1 > div > .social-m > .links > a > img:hover,
@@ -61,7 +61,7 @@ section.section2 > .cent-container > .personal > .social-m > .links > a > img:ho
   filter: invert(80%);
 }
 .section1 > div > .the-title {
-  height: 60%;
+  height: 70%;
   width: 85%;
   padding: 0 10px;
   margin: 0 auto 0 auto;
@@ -73,7 +73,7 @@ section.section2 > .cent-container > .personal > .social-m > .links > a > img:ho
   background-color: blue;*/
 }
 .section1 > div > .the-title > .hellow {
-  height: 50px;
+  height: 70px;
   width: fit-content;
   position: relative;/*
   background-color: purple;*/
@@ -84,24 +84,24 @@ section.section2 > .cent-container > .personal > .social-m > .links > a > img:ho
   color: #cfcfcf;
 }
 .section1 > div > .the-title > .name {
-  height: 80px;
+  height: 90px;
   width: fit-content;
   position: relative;/*
   background-color: green;*/
 }
 .section1 > div > .the-title > .name > h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-family: "Dosis","Open Sans",sans-serif;
   color: #cfcfcf;
 }
 .section1 > div > .the-title > .prof {
-  height: 40px;
+  height: 50px;
   width: fit-content;
   position: relative;/*
   background-color: maroon;*/
 }
 .section1 > div > .the-title > .prof > p {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Times New Roman' Times, serif;
   color: #cfcfcf;
 }
@@ -111,7 +111,8 @@ section.section2 > .cent-container > .personal > .social-m > .links > a > img:ho
   align-items: center;
 }
 .section1 > div > .the-title > .pdf,
-.section2 > .cent-container > .col > .-resume {
+.section2 > .cent-container > .col > .-resume,
+section.section3 > .container2 > .padding > center > .pdf {
   height: fit-content;
   width: fit-content;
   padding: 10px 30px;
@@ -124,17 +125,20 @@ section.section2 > .cent-container > .personal > .social-m > .links > a > img:ho
   background-color: #002d6c;
 }
 .section1 > div > .the-title > .pdf:hover,
-.section2 > .cent-container > .col > .-resume:hover {
+.section2 > .cent-container > .col > .-resume:hover,
+section.section3 > .container2 > .padding > center > .pdf:hover {
   opacity: .95;
 }
 .section1 > div > .the-title > .pdf > div,
-.section2 > .cent-container > .col > .-resume > div {
+.section2 > .cent-container > .col > .-resume > div,
+section.section3 > .container2 > .padding > center > .pdf > div {
   color: #cfcfcf;
   font-family: "Dosis", sans-serif;
   font-size: 17px;
 }
 .section1 > div > .the-title > .pdf > div > img,
-.section2 > .cent-container > .col > .-resume > div > img {
+.section2 > .cent-container > .col > .-resume > div > img,
+section.section3 > .container2 > .padding > center > .pdf > div > img {
   height: 20px;
   filter: invert(50%);
 }
@@ -189,8 +193,12 @@ header {
   box-shadow: -2px -1px 7px 0px;
   z-index: 2;
 }
+.sticky_header {
+  position: fixed;
+  top: 0;
+}
 header > nav {
-  height: 70px;
+  height: 80px;
   width: 85%;
   position: relative;
   display: flex;
@@ -235,22 +243,63 @@ header > nav > div > .nav-links > a.active::after,
 header > nav > div > .nav-links > a:hover::after {
   width: 100%;
 }
-header > nav > .cicle-img {
-  height: 70px;
-  width: 10%;
+header > nav > .mid-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-header > nav > .cicle-img > .img-ci {
-  height: 85px;
-  width: 85px;
-  border-radius: 50px;
+header > nav > .mid-container > .circle-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  display: flex;
+  transition: opacity 0.5s ease-in-out;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff;
+  align-items: center;
+  height: 150px;
+  position: absolute;
+  z-index: 4;
+}
+header > nav > .mid-container > .circle-img > .img-ci {
+  height: 130px;
+  width: 140px;
   position: relative;
+  border-radius: 100px;
   background-image: url(../IMAGES/IMG_2453.png);
-  background-position: center;
   background-size: cover;
+  background-position: center;
+}
+/*..stickyheader header names..*/
+header > nav > .mid-container > .nm-prof {
+  height: 50px;
+  width: 160px;
+  display: flex;
   z-index: 3;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+header > nav > .mid-container > .nm-prof > .pro-name,
+header > nav > .mid-container > .nm-prof > .pro-pro {
+  text-align: center;
+}
+header > nav > .mid-container > .nm-prof > .pro-name{
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.30rem;
+}
+header > nav > .mid-container > .nm-prof > .pro-pro {
+  font-size: 15px;
+  color: #393939;
+}
+header > nav > .mid-container > .nm-prof > .pro-pro > span {
+  font-size: 18px;
+  color: #000;
 }
 .section2 {
   width: 100%;
@@ -279,14 +328,17 @@ header > nav > .cicle-img > .img-ci {
 .section2 > .cent-container > .col > .-text,
 section.section3 > .container > .-text,
 section.section3 > .container > .main-cont > .skills > .-title,
-section.section3 > .container > .main-cont > .education > .-title {
+section.section3 > .container > .main-cont > .education > .-title,
+section.section4 > .container >  .-text {
   height: fit-content;
   position: relative;
 }
 .section2 > .cent-container > .col > .-text > h3,
 section.section3 > .container > .-text > h3,
+section.section3 > .container2 > .padding > center > .availability > p,
 section.section3 > .container > .main-cont > .skills > .-title > span,
-section.section3 > .container > .main-cont > .education > .-title > span {
+section.section3 > .container > .main-cont > .education > .-title > span,
+section.section4 > .container >  .-text > h3 {
   color: #000;
   font-family: "Dosis", sans-serif;
   font-weight: 300;
@@ -406,15 +458,18 @@ section.section2 > .cent-container > .expertise > .exp-container > .rows > .col-
   width: 100%;
   padding: 70px 10px 10px 10px;
 }
-section.section3 > .container {
+section.section3 > .container,
+section.section4 > .container {
   width: 90%;
   padding: 0 50px;
   margin: 0 auto;
 }
-section.section3 > .container > .-text > h3 > span {
+section.section3 > .container > .-text > h3 > span,
+section.section4 > .container > .-text > h3 > span {
   color: #002d6c!important;
 }
-section.section3 > .container > .main-cont {
+section.section3 > .container > .main-cont,
+section.section4 > .container > .main-cont {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -438,6 +493,9 @@ section.section3 > .container > .main-cont > .skills > .-names > .row {
 }
 section.section3 > .container > .main-cont > .skills > .-names > .row > .skill {
   font-size: 19px!important;
+}
+section.section3 > .container > .main-cont > .skills > .-names > .row > .skill > span {
+  font-size: 12px;
 }
 section.section3 > .container > .main-cont > .skills > .-names > .row > .length {
   height: 10px;
@@ -464,7 +522,10 @@ section.section3 > .container > .main-cont > .skills > .-names > .row > .length 
   width: 90%;
 }
 section.section3 > .container > .main-cont > .skills > .-names > .row > .length > .-l6 {
-  width: 70%;
+  width: 50%;
+}
+section.section3 > .container > .main-cont > .skills > .-names > .row > .length > .-l7 {
+  width: 75%;
 }
 section.section3 > .container > .main-cont > .education > .-names > .row > .year {
   color: #002d6c;
@@ -482,7 +543,7 @@ section.section3 > .container > .main-cont > .education > .-names > .row > .cour
 }
 section.section3 > .container > .main-cont > .education > .-names > .row > .-description > li {
   list-style-type: circle;
-  padding: 0 15px; 
+  padding: 0 15px;
 }
 section.section3 > .container > .main-cont > .education > .-names > .row > .line {
   padding: 10px 0;
@@ -492,4 +553,74 @@ section.section3 > .container > .main-cont > .education > .-names > .row > .line
   position: relative;
   opacity: .6;
   background-color: #9b9b9b;
+}
+section.section3 > .container2 {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  padding: 14px 0;
+}
+section.section3 > .container2 > .padding {
+  background-color: #121a22;
+  height: 220px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.section3 > .container2 > .padding > center > .availability {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.section3 > .container2 > .padding > center > .availability > p {
+  color: #cfcfcf!important;
+}
+section.section3 > .container2 > .padding > center > .pdf > div > img {
+  height: 25px;
+  filter: invert(70%)!important;
+}
+
+/* SECTION 04 - PORTFOLIO */
+section.section4 > .container > .main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.section4 > .container > .main-cont > .header-list {
+  height: 37px;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #9b9b9b;
+}
+section.section4 > .container > .main-cont > .header-list > div {
+  padding: 9px 40px;
+}
+section.section4 > .container > .main-cont > .header-list > .active {
+  background-color: #002d6c;
+  color: #cfcfcf;
+}
+section.section4 > .container > .main-cont > .grid-cont{
+  height: 400px;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #eecece;
+}
+section.section4 > .container > .main-cont > .grid-cont > .grid-inn-cont {
+  height: 350px;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffcecf;
 }

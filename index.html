@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Portfolio | Junior Ravhuravhu</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
   </head>
   <body>
     <section class="section1" id="top">
@@ -56,7 +57,7 @@
         </div>
       </div>
     </section>
-    <header>
+    <header id="headersti">
       <nav>
         <div class="row1">
           <div class="col-1 nav-links">
@@ -70,20 +71,30 @@
           </div>
         </div>
         <!-- Swap Image with Name -->
-        <div class="cicle-img">
-          <div class="img-ci">
-            <!-- As a background image -->
+        <div class="mid-container">
+          <div class="circle-img">
+            <div class="img-ci">
+              <!-- Background Image --->
+            </div>
           </div>
-          <!-- As a name & profession -->
-          <div class="nm-prof"></div>
+            <!-- As a name & profession -->
+          <div class="nm-prof">
+            <div class="pro-name">
+              Arrithnius Junior
+            </div>
+            <div class="pro-pro">
+              Mobile <span>|</span> Web Developer
+            </div>
+          </div>
         </div>
+
         <!-- More links -->
         <div class="row2">
           <div class="col-4 nav-links">
-            <a href="">Link 4</a>
+            <a href="">Portfolio</a>
           </div>
           <div class="col-5 nav-links">
-            <a href="">Link 5</a>
+            <a href="">Contact</a>
           </div>
         </div>
       </nav>
@@ -98,7 +109,7 @@
             <h5>Front-End Developer | Designer</h5>
           </div>
           <div class="-description">
-            <p>I am a recent computer science graduate, who's self-motivated and always eager to learn and expand skillset. My passion lies in software engineering, and I have experience working on various projects using proficient programming languages such as Java, C++, and Dart, as well as front-end technologies such as HTML, CSS, and JavaScript.</p>
+            <p>I am a recent BScComputer science graduate, currently doing Honours at UJ , I'm a self-motivated and always eager to learn and expand skillset. My passion lies in software engineering, and I have experience working on various projects using proficient programming languages such as Java, C++, and Dart, as well as front-end technologies such as HTML, CSS, and JavaScript.</p>
           </div>
           <div class="-resume">
             <div>
@@ -215,6 +226,12 @@
                   <div class="length-1 -l6"></div>
                 </div>
               </div>
+              <div class="row"> <!-- Box for skill one[two rows]-->
+                <div class="skill">Programming Langauges <span><br>(Java, C++, Python, Dart, JavaScript, etc)</span></div>
+                <div class="length">
+                  <div class="length-1 -l7"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="education">
@@ -234,7 +251,7 @@
                 <div class="year">2019 - 2022</div>
                 <div class="course">BSc in Computer science & Information Systems</div>
                 <div class="-description">
-                    • Awarded: degree certificate<br> • Graduated with 65%+ academic aggregation
+                    • Awarded: degree certificate<br> • Graduated with +65% academic aggregation
                 </div>
                 <div class="line">
                   <hr class="hr">
@@ -279,7 +296,39 @@
           </div>
         </div>
       </div>
-    </div>
+      <div class="container2 hireme">
+        <div class="padding">
+          <center>
+            <div class="availability">
+              <p>I am available for Freelance</p>
+            </div>
+            <div class="pdf">
+              <div>
+                <img src="IMAGES/deal.png"/>
+              </div>
+              <div>Hire Me</div>
+            </div>
+          </center>
+        </div>
+      </div>
+    </section>
+    <section class="section4" id="my-grid">
+      <div class="container">
+        <div class="-text">
+          <h3><span>My</span> Portfolio</h3>
+        </div>
+        <div class="main-cont">
+          <div class="header-list">
+            <div class="active">All</div>
+            <div>Websites</div>
+            <div>Mobile</div>
+          </div>
+          <div class="grid-cont">
+            <div class="grid-inn-cont"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--<section>
 
 
@@ -299,5 +348,6 @@
 
     </section>-->
     <script src="JS/script.js"></script>
+    <script src="JS/stickyheader.js"></script>
   </body>
 </html>
