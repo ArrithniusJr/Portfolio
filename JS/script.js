@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       </a>
     </div>
     <div class="links">
-      <a href="mailto:arrithnius@gmail.com?subject=Feedback">
+      <a href="mailto:arrithnius@gmail.com?subject=Arrithnius | Portfolio">
         <img src="IMAGES/email.png" alt="facebook"/>
       </a>
     </div>

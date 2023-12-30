@@ -2,72 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio | Junior Ravhuravhu</title>
+    <title>Junior Ravhuravhu | Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
   </head>
   <body>
     <section class="section1" id="top">
       <div class="dim-container">
-        <!--<div class="social-m" id="social-m">
-          <div class="links">
-            <a href="https://www.facebook.com/arrithniuskhuliso/">
-              <img src="IMAGES/fbh.png" alt="facebook"/>
-            </a>
-          </div>
-          <div class="links">
-            <a href="mailto:arrithnius@gmail.com?subject=Feedback">
-              <img src="IMAGES/email.png" alt="facebook"/>
-            </a>
-          </div>
-          <div class="links">
-            <a href="https://wa.me/+27677343682/">
-              <img src="IMAGES/whatsapp.png" alt="facebook"/>
-            </a>
-          </div>
-          <div class="links">
-            <a href="https://www.arrithnius.github.io">
-              <img src="IMAGES/github.png" alt="github"/>
-            </a>
-          </div>
-          <div class="links">
-            <a href="">
-              <img src="IMAGES/Ll.png" alt="linkedln"/>
-            </a>
-          </div>
-        </div>
-      -->
-      <div class="social-m" id="social-m-section1"></div>
-      <div class="the-title">
-          <div class="hellow msg"><h4>Hi, I am</h4></div>
-          <div class="name msg"><h1>Arrithnius Jr. Khuliso</h1></div>
-          <div class="prof msg"><p>Software Developer | Mobile Programmer | Web Designer</p></div>
-          <br>
-          <div class="pdf">
-            <div>
-              <img src="IMAGES/pdf.png"/>
+        <div class="social-m" id="social-m-section1"></div>
+        <div class="the-title">
+            <div class="hellow msg"><h4>Hi, I am</h4></div>
+            <div class="name msg"><h1>Junior Ravhuravhu</h1></div>
+            <div class="prof msg"><p>Software Engineer | Mobile/Web Designer,  Developer</p></div>
+            <br>
+            <div class="pdf">
+              <div>
+                <img src="IMAGES/pdf.png"/>
+              </div>
+              <div>View Resume</div>
             </div>
-            <div>View Resume</div>
           </div>
-        </div>
-        <div class="down-arrow">
-          <a href="#about">
-            <img src="IMAGES/scroll.png" alt="arrow-down"/>
-          </a>
-        </div>
+          <div class="down-arrow">
+            <a href="#about" class="ab_arrow">
+              <img src="IMAGES/scroll.png" alt="arrow-down"/>
+            </a>
+          </div>
       </div>
     </section>
+    <div class="content-anchor"><div>
     <header id="headersti">
       <nav>
         <div class="row1">
           <div class="col-1 nav-links">
-            <a href="#top" class="active">Home</a>
+            <a href="#top" class="nav_act active">Home</a>
           </div>
           <div class="col-2 nav-links">
-            <a href="#about">About</a>
+            <a href="#about" class="nav_act about_act">About</a>
           </div>
           <div class="col-3 nav-links">
-            <a href="#resume">Resume</a>
+            <a href="#resume" class="nav_act">Resume</a>
           </div>
         </div>
         <!-- Swap Image with Name -->
@@ -79,11 +53,13 @@
           </div>
             <!-- As a name & profession -->
           <div class="nm-prof">
-            <div class="pro-name">
-              Arrithnius Junior
-            </div>
-            <div class="pro-pro">
-              Mobile <span>|</span> Web Developer
+            <div class="nm_prof_hide">
+              <div class="pro-name">
+                Junior Ravhuravhu
+              </div>
+              <div class="pro-pro">
+                Mobile <span>|</span> Web Developer
+              </div>
             </div>
           </div>
         </div>
@@ -91,10 +67,10 @@
         <!-- More links -->
         <div class="row2">
           <div class="col-4 nav-links">
-            <a href="">Portfolio</a>
+            <a href="#my-grid" class="nav_act">Portfolio</a>
           </div>
           <div class="col-5 nav-links">
-            <a href="">Contact</a>
+            <a href="" class="nav_act">Contact</a>
           </div>
         </div>
       </nav>
@@ -111,6 +87,7 @@
           <div class="-description">
             <p>I am a recent BScComputer science graduate, currently doing Honours at UJ , I'm a self-motivated and always eager to learn and expand skillset. My passion lies in software engineering, and I have experience working on various projects using proficient programming languages such as Java, C++, and Dart, as well as front-end technologies such as HTML, CSS, and JavaScript.</p>
           </div>
+          <br>
           <div class="-resume">
             <div>
               <img src="IMAGES/pdf.png"/>
@@ -127,7 +104,7 @@
             <p>Email:<span class="-title-lighter-info"> arrithnius@gmail.com</span></p>
             <p>Facebook:<span class="-title-lighter-info"> @arrithniuskhuliso</span></p>
             <p>Phone:<span class="-title-lighter-info"> +27 (0) 67 734 3682</span></p>
-            <p>Address:<span class="-title-lighter-info"> 333 Raburabu Mailaskop, Limpopo, 0948</span></p>
+            <p>Address:<span class="-title-lighter-info"> Gauteng, South Africa</span></p>
           </div>
           <!-- Calling social links -->
           <div class="social-m" id="social-m-section2"></div>
@@ -239,41 +216,67 @@
               <span>Education</span>
             </div>
             <div class="-names data-container"> <!--Container for skills names-->
-              <div class="row"> <!-- Box for education one-->
-                <div class="year">2023 - Present</div>
-                <div class="course">BScHons in Computer science</div>
-                <div class="-description"> • Currently completing research on: *****</div>
-                <div class="line">
-                  <hr class="hr">
-                </div>
-              </div>
-              <div class="row"> <!-- Box for education two-->
-                <div class="year">2019 - 2022</div>
-                <div class="course">BSc in Computer science & Information Systems</div>
+              <div class="row"> <!-- Box for education three-->
+                <div class="year schl_details">Aug 2023 - Present</div>
+                <div class="org">British Columbia Institute of Technology</div>
+                <div class="schl_details">Applied Software Engineering<span>, Associate Certificate</span></div>
                 <div class="-description">
-                    • Awarded: degree certificate<br> • Graduated with +65% academic aggregation
+                  <i>---Currently Completing..</i>
+                  <br>
+                   • Programming Practice<i>(Python, Java, C++)</i><br> • Software Quality Assurance<br> • Application Development<br> • Business Analysis
                 </div>
                 <div class="line">
                   <hr class="hr">
                 </div>
               </div>
               <div class="row"> <!-- Box for education three-->
-                <div class="year">2014 - 2018</div>
-                <div class="course">High School Degree</div>
+                <div class="year schl_details">Feb 2023 - Dec 2023</div>
+                <div class="org">University of Johannesburg(UJ)</div>
+                <div class="schl_details">BScHons in Computer science</div>
+                <div class="-description"> • Completed an Honours project research on Cyberbullying<br> • Created an algorithm to detect offensive speech from Social Media</div>
+                <div class="line">
+                  <hr class="hr">
+                </div>
+              </div>
+              <div class="row"> <!-- Box for education two-->
+                <div class="year schl_details">Feb 2019 - Dec 2022</div>
+                <div class="org">University of Venda(Univen)</div>
+                <div class="schl_details">BSc in Computer science & Information Systems</div>
+                <div class="-description">
+                    • Awarded: Bachelor's degree certificate<br> • Graduated with over 65% academic aggregation
+                </div>
+                <div class="line">
+                  <hr class="hr">
+                </div>
+              </div>
+              <div class="row"> <!-- Box for education one-->
+                <div class="year schl_details">2014 - 2018</div>
+                <div class="org">Michael Denga Ramabulana</div>
+                <div class="schl_details">High School Senior Certificate</div>
                 <div class="-description">
                     • School Cert: Admission to Bachelor <br>• Subjects: Mathematics, Physical Science, English
                 </div>
               </div>
             </div>
           </div>
-          <div class="education certificates">
+          <div class="certificates">
             <div class="-title">
-              <span>Certificates</span>
+              <span>Certificates | Badges</span>
             </div>
             <div class="-names data-container"> <!--Container for skills names-->
-              <div class="row"> <!-- Box for certificate one-->
-                <div class="year">Sololearn</div>
-                <div class="course">Online Courses</div>
+              <div class="row"> <!-- Box for certificate three-->
+                <div class="year">British Columbia Institute of Technology</div>
+                <div class="org">BCIT Prescribed Course</div>
+                <div class="-description"> • Awarded Module Badge & Certificates:
+                  <li>Communications for Team-Based Collaboration</li>
+                </div>
+                <div class="line">
+                  <hr class="hr">
+                </div>
+              </div>
+              <div class="row"> <!-- Box for certificate two-->
+                <div class="year">Sololearn Platform</div>
+                <div class="org">Online Courses</div>
                 <div class="-description"> • Course Completed | Certificates Awarded:
                   <li>HTML & CSS</li>
                   <li>Structured Query Langauge</li>
@@ -285,8 +288,8 @@
                 </div>
               </div>
               <div class="row"> <!-- Box for certificate one-->
-                <div class="year">Great Learning</div>
-                <div class="course">Online Courses</div>
+                <div class="year">Great Learning Platform</div>
+                <div class="org">Online Courses</div>
                 <div class="-description"> • Course Completed | Certificates Awarded:
                   <li>JavaScript(jQuery)</li>
                   <li>Intro to Front-end Development</li>
@@ -294,6 +297,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="show_more_container">
+          <div class="show_hide">View More Details</div>
         </div>
       </div>
       <div class="container2 hireme">
@@ -319,12 +325,283 @@
         </div>
         <div class="main-cont">
           <div class="header-list">
-            <div class="active">All</div>
-            <div>Websites</div>
-            <div>Mobile</div>
+            <div class="all active dvc">All</div>
+            <div class="act_web dvc">Websites</div>
+            <div class="act_mob dvc">Mobile | Desktop</div>
           </div>
           <div class="grid-cont">
-            <div class="grid-inn-cont"></div>
+            <div class="grid-inn-cont" id="grid-container">
+              <div class="_img" id="m_dk">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/CyberScan/smartmockups_lqpq3wnd.jpg" alt="CyberScan"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>CyberScan System<br>
+                       <span>Desktop Application<i>(in Python)</i></span></p>
+                      <hr class="hr">
+                      <p class="device_type">A system to detect and flag out harmful content from a comment, message, or post on social media.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://github.com/ArrithniusJr/CyberScan" target="_blank">
+                        <div>Source Code</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="wb">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/LetsTryYou/smartmockups_lqpqjunq.jpg" alt="LetsTryYou"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>LetsTryYou<br>
+                       <span>Web Application<i>(in HTML, CSS)</i></span></p>
+                      <hr class="hr">
+                      <p class="device_type">An Art Web-based Portfolio Application, 'LetsTryYou'.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://arrithniusjr.github.io/LetsTryYou/" target="_blank">
+                        <div>Visit Website</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="wb">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/MaverickWorld/smartmockups_lqps1qml.jpg" alt="MaverickWorld"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>MaverickWorld<br>
+                       <span>Web Application
+                         <i>(in HTML, CSS, JS)</i>
+                         <br>Homepage view
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Responsive website: Collection of my favourite gospel band.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://arrithniusjr.github.io/MaverickWorld/" target="_blank">
+                        <div>Visit Website</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="wb">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/MaverickWorld/smartmockups_lqpsbvip.jpg" alt="MaverickWorld"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>MaverickWorld<br>
+                       <span>Web Application
+                         <i>(in HTML, CSS, JS)</i>
+                         <br>Playlist view
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Responsive website: Collection of my favourite gospel band.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://arrithniusjr.github.io/MaverickWorld/" target="_blank">
+                        <div>Visit Website</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="wb">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/TempConverter/smartmockups_lqpshwz3.jpg" alt="Converter"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>Temperature Converter<br>
+                       <span>Web Application<i>(in HTML, CSS, JQuery)</i></span></p>
+                      <hr class="hr">
+                      <p class="device_type">Allows a user to enter a temperature's degree in Celsius, Fahrenheit or in Kelvin.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://arrithniusjr.github.io/Converter-1/" target="_blank">
+                        <div>Visit Website</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="m_dk">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/TerriConnect/aps.jpg" alt="TerriConnect"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>TerriConnect<br>
+                       <span>Mobile Application
+                         <i>(in Dart, Flutter)</i>
+                         <br>APS view
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Simplifying South African tertiary applications with auto APS calculation and personalized course recommendations.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://github.com/ArrithniusJr/TerriConnect" target="_blank">
+                        <div>View Application</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="m_dk">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/TerriConnect/catgories.jpg" alt="TerriConnect"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>TerriConnect<br>
+                       <span>Mobile Application
+                         <i>(in Dart, Flutter)</i>
+                         <br>Course Recommendation
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Simplifying South African tertiary applications with auto APS calculation and personalized course recommendations.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://github.com/ArrithniusJr/TerriConnect" target="_blank">
+                        <div>View Application</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="m_dk">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/TerriConnect/notes.jpg" alt="TerriConnect"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>TerriConnect<br>
+                       <span>Mobile Application
+                         <i>(in Dart, Flutter)</i>
+                         <br>Notes Taking
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Simplifying South African tertiary applications with auto APS calculation and personalized course recommendations.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://github.com/ArrithniusJr/TerriConnect" target="_blank">
+                        <div>View Application</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="m_dk">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/TerriConnect/marks.jpg" alt="TerriConnect"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>TerriConnect<br>
+                       <span>Mobile Application
+                         <i>(in Dart, Flutter)</i>
+                         <br>Entering Marks
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Simplifying South African tertiary applications with auto APS calculation and personalized course recommendations.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://github.com/ArrithniusJr/TerriConnect" target="_blank">
+                        <div>View Application</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="m_dk">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/TerriConnect/wel.jpg" alt="TerriConnect"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>TerriConnect<br>
+                       <span>Mobile Application
+                         <i>(in Dart, Flutter)</i>
+                         <br>Homepage View
+                       </span>
+                      </p>
+                      <hr class="hr">
+                      <p class="device_type">Simplifying South African tertiary applications with auto APS calculation and personalized course recommendations.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://github.com/ArrithniusJr/TerriConnect" target="_blank">
+                        <div>View Application</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="_img" id="wb">
+                <!-- Image file -->
+                <div class="for_img">
+                  <img src="IMAGES/ToDoList/smartmockups_lqprf4kn.jpg" alt="TerriConnect"/>
+                  <div class="dscrp_img">
+                    <div class="desc_cont">
+                      <p>To-Do List<br>
+                       <span>Web Application<i>(in HTML, CSS, JQuery)</i></span></p>
+                      <hr class="hr">
+                      <p class="device_type">A Web-based Application for Creating Tasks To Do, simple schedule management.</p>
+                    </div>
+                    <div class="img">
+                      <a href="https://arrithniusjr.github.io/TO-DO-List/" target="_blank">
+                        <div>Visit Website</div>
+                        <div>
+                          <img src="IMAGES/link.png"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
